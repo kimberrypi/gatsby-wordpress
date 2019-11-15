@@ -37,6 +37,7 @@ module.exports = {
         hostingWPCOM: true,
         useACF: false
       }
-    }
+    },
+    `gatsby-plugin-sass`
   ]
 };
