@@ -1,24 +1,24 @@
 import React from "react";
-// import { useStaticQuery, graphql, Link } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 import Layout from "../components/layout";
 import Image from "../components/image";
 import SEO from "../components/seo";
 
 const IndexPage = () => {
-  // const data = useStaticQuery(graphql`
-  //   {
-  //     allWordpressPost {
-  //       totalCount
-  //       nodes {
-  //         id
-  //         slug
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
-  // let blogPosts = data.allWordpressPost.nodes;
+  const data = useStaticQuery(graphql`
+    {
+      allWordpressPost {
+        totalCount
+        nodes {
+          id
+          slug
+          title
+        }
+      }
+    }
+  `);
+  let blogPosts = data.allWordpressPost.nodes;
 
   return (
     <Layout>
@@ -31,7 +31,7 @@ const IndexPage = () => {
           meantime, let's look at these articles:
         </p>
 
-        {/* <ul>
+        <ul>
           {blogPosts.map(blog => (
             <li key={blog.slug} className="has-text-black">
               <Link to={`blog/${blog.slug}`}>
@@ -39,7 +39,7 @@ const IndexPage = () => {
               </Link>
             </li>
           ))}
-        </ul> */}
+        </ul>
       </div>
 
       <div style={{ marginBottom: `1.45rem` }}>
