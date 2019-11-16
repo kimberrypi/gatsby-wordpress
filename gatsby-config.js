@@ -2,9 +2,9 @@ require("dotenv").config();
 
 module.exports = {
   siteMetadata: {
-    title: `WP Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`
+    title: `Pokemon Sword and Shield`,
+    description: `A demo of gatsby-source-wordpress`,
+    author: `@kimberrypi`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -23,10 +23,10 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#CC0000`,
+        theme_color: `#CC0000`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`
+        icon: `src/images/pokeball.png`
       }
     },
     {
