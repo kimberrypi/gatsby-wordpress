@@ -28,15 +28,15 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`
       }
-    },
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        baseUrl: process.env.GATSBY_WP_URL,
-        protocol: `https`,
-        hostingWPCOM: true,
-        useACF: false
-      }
     }
+    // {
+    //   resolve: `gatsby-source-wordpress`,
+    //   options: {
+    //     baseUrl: process.env.GATSBY_WP_URL,
+    //     protocol: `https`,
+    //     hostingWPCOM: true,
+    //     useACF: false
+    //   }
+    // }
   ]
 };
